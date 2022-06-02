@@ -8,6 +8,7 @@
 @import "./layout/inc-header.scss";
 @import "./layout/inc-footer.scss";
 @import "./components/registration.scss";
+@import "./components/buttons.scss";
 
 /* pages */
 @import "index";
@@ -90,9 +91,6 @@ body {
 
 .ui-field {
   margin-bottom: 25px;
-  // &:last-child {
-  //   margin-bottom: 15px;
-  // }
   label {
     display: block;
     font-size: rem(13px);
@@ -145,6 +143,9 @@ body {
     margin-bottom: 15px;
   }
 }
+.input-eye {
+  padding-right: 52px;
+}
 // Класс для смены иконки "глазик" в поле - пароль
 .password-eye-see {
   background-image: url(../images/icon/eye-password-see.svg);
@@ -172,6 +173,7 @@ body {
   display: inline-flex;
   align-items: center;
   user-select: none;
+  cursor: pointer;
   @media(max-width:450px) {
       align-items: flex-start;
   }
@@ -198,3 +200,6 @@ body {
 .registration-footer-checkbox:not(:disabled):not(:checked)+label:hover::before {
   border-color: #b3d7ff;
 }
+
+
+

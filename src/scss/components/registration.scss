@@ -16,6 +16,7 @@
     &-btn {
        border: none;
        width: 100%;
+       max-width: 397px;
        padding: 0px 20px;
        line-height: 56px;
        height: 56px;
@@ -30,6 +31,14 @@
        &:hover {
            background: #E02535;
        }
+       &-disabled {
+           background: #B8BABF;
+           box-shadow: none;
+           cursor: auto;
+           &:hover {
+            background: #B8BABF;
+           }
+       }
     }
     &-footer {
         &-info {
@@ -42,6 +51,7 @@
             font-size: rem(13px);
             color: $colorSilver;
             font-weight: 500;
+            
         }
     }
 }

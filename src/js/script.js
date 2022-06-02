@@ -53,7 +53,7 @@ $(document).ready(function () {
         },
         inn: {
             required:"Введите свой ИНН", 
-            number: 'Введите корректную ИНН',
+            number: 'Введите корректный ИНН',
             inn: `<div class='inn-occupied'>
             Ваша компания уже зарегистрирована, пожалуйста обратитесь к менеджеру вашего аккаунта или <a href="#">напишите нам</a>
             </div>`,
@@ -104,7 +104,6 @@ $(document).ready(function () {
 
 let passEye = document.querySelector('.ui-field-password-eye'),
     unputEye = document.querySelector('.input-eye');
-    // passSee = document.querySelector('.password-eye-see')
     if(passEye) {
         passEye.onclick = () => {
             if(unputEye.getAttribute('type') === 'password' ){
