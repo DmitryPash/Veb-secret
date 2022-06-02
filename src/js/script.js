@@ -97,21 +97,20 @@ $(document).ready(function () {
          mask: '+{7}(000)000-00-00'
       };
       var mask = IMask(element, maskOptions);
- });
-
-
+      
 // Скрываем/показываем пароль
-
 let passEye = document.querySelector('.ui-field-password-eye'),
-    unputEye = document.querySelector('.input-eye');
-    if(passEye) {
-        passEye.onclick = () => {
-            if(unputEye.getAttribute('type') === 'password' ){
-                passEye.classList.add('password-eye-see')
-                unputEye.setAttribute('type', 'text')
-            } else {
-                passEye.classList.remove('password-eye-see')
-                unputEye.setAttribute('type', 'password')
-            }
+unputEye = document.querySelector('.input-eye');
+if(passEye) {
+    passEye.onclick = () => {
+        if(unputEye.getAttribute('type') === 'password' ){
+            passEye.classList.add('password-eye-see')
+            unputEye.setAttribute('type', 'text')
+        } else {
+            passEye.classList.remove('password-eye-see')
+            unputEye.setAttribute('type', 'password')
         }
     }
+}
+});
+
