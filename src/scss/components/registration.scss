@@ -1,0 +1,47 @@
+.registration {
+    max-width: 397px;
+    margin: 0 auto;
+    padding-top: 160px;
+    padding-bottom: 203px;
+    &-title {
+        font-weight: 700;
+        font-size: rem(48px);
+        margin-bottom: 40px;
+        color: $colorBlack;
+        letter-spacing: -0.02em;
+        @media(max-width:375px) {
+            margin-bottom: 30px;
+        }
+    }
+    &-btn {
+       border: none;
+       width: 100%;
+       padding: 0px 20px;
+       line-height: 56px;
+       height: 56px;
+       text-align: center;
+       font-size: rem(16px); 
+       color: #fff;
+       background: $colorRed;
+       box-shadow: 0px 20px 25px rgba(209, 26, 42, 0.15);
+       border-radius: 12px;
+       cursor: pointer;
+       transition: 0.3s ease;
+       &:hover {
+           background: #E02535;
+       }
+    }
+    &-footer {
+        &-info {
+            font-size: rem(13px);
+            color: #777E90;
+            margin-bottom: 30px;
+        }
+        &-check {
+            margin-bottom: 25px;
+            font-size: rem(13px);
+            color: $colorSilver;
+            font-weight: 500;
+        }
+    }
+}
